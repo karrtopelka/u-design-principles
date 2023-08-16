@@ -4,17 +4,22 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint \"src/**/*.scss\" --config .stylelintrc.json",
-    "lint:fix": "stylelint \"src/**/*.scss\" --config .stylelintrc.json --fix"
+    "lint:fix": "stylelint \"src/**/*.scss\" --config .stylelintrc.json --fix",
+    "prepare": "cd .. && husky install scss/.husky"
   },
   "license": "MIT",
   "dependencies": {
     "normalize-scss": "^7.0.1"
   },
   "devDependencies": {
+    "lint-staged": "^14.0.0",
     "prettier": "^3.0.2",
     "stylelint": "^15.10.2",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-sass-guidelines": "^10.0.0",
     "stylelint-prettier": "^4.0.2"
+  },
+  "lint-staged": {
+    "*.scss": "yarn lint:fix"
   }
 }
