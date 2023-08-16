@@ -1,0 +1,34 @@
+:root {
+  --dp-body-text-color: #{$dark};
+  --dp-body-bg-color: #{$white};
+
+  --dp-btn-primary-color: #{$white};
+  --dp-btn-primary-bg: #{$green};
+  --dp-btn-primary-bg-hover: #{$green-light};
+
+  --dp-btn-secondary-color: #{$white};
+  --dp-btn-secondary-bg: #{$dark};
+
+  --dp-form-color: #{$dark};
+  --dp-form-bg: #{$white};
+  --dp-form-error-color: #{$red};
+  --dp-form-error-border: #{$red};
+  --dp-form-border-focus-color: #{$green};
+
+  --dp-body-font-size: #{$fs-base};
+  --dp-body-font-weight: #{$fw-normal};
+
+  --dp-h1-font-size: #{$h-1};
+  --dp-h2-font-size: #{$h-2};
+  --dp-h3-font-size: #{$h-3};
+  --dp-h4-font-size: #{$h-4};
+  --dp-h5-font-size: #{$h-5};
+  --dp-h6-font-size: #{$h-6};
+
+  --dp-h1-font-weight: #{$fw-medium};
+  --dp-h2-font-weight: #{$fw-medium};
+  --dp-h3-font-weight: #{$fw-medium};
+  --dp-h4-font-weight: #{$fw-normal};
+  --dp-h5-font-weight: #{$fw-normal};
+  --dp-h6-font-weight: #{$fw-light};
+}

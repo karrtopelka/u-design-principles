@@ -1,0 +1,27 @@
+{
+  "name": "@design-principles/scss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint \"src/**/*.scss\" --config .stylelintrc.json",
+    "lint:fix": "stylelint \"src/**/*.scss\" --config .stylelintrc.json --fix",
+    "build": "node ./scripts/build.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "lint-staged": "^14.0.0",
+    "node-sass": "^9.0.0",
+    "prettier": "^3.0.2",
+    "sass": "^1.65.1",
+    "stylelint": "^15.10.2",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-sass-guidelines": "^10.0.0",
+    "stylelint-prettier": "^4.0.2"
+  },
+  "lint-staged": {
+    "*.scss": "yarn lint:fix"
+  }
+}
