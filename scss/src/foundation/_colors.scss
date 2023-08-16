@@ -1,0 +1,36 @@
+/*=============================================
+=            Foundation - colors              =
+=============================================*/
+
+/**
+ * This file defines the actual colors that will be used for styling. They will default to the palette
+ * we defined in the _variable.scss file. This is our default palette, and devs can override this
+ * with their own variables.
+ */
+
+/*=============================================
+=            Global text colors               =
+=============================================*/
+$body-text-color: var(--dp-body-text-color, $dark) !default;
+$body-bg-color: var(--dp-body-bg-color, $white) !default;
+
+/*=============================================
+=                 Buttons                     =
+=============================================*/
+$btn-primary-color: var(--dp-btn-primary-color, $white) !default;
+$btn-primary-bg: var(--dp-btn-primary-bg, $green) !default;
+$btn-primary-bg-hover: var(--dp-btn-primary-bg-hover, $green-light) !default;
+
+/*=============================================
+=                 Forms                       =
+=============================================*/
+$form-border-color: var(--dp-form-border-color, $white-dark) !default;
+$form-bg-color: var(--dp-form-bg-color, $white) !default;
+$form-bg-option-selected: var(--dp-form-bg-option-selected, $green) !default;
+$form-color-option-selected: var(--dp-form-color-option-selected, $white) !default;
+$form-bg-color-hover: var(--dp-form-bg-color-hover, $white-dark) !default;
+$form-color: var(--dp-form-color, $dark) !default;
+$form-bg: var(--dp-form-bg, $white) !default;
+$form-error-color: var(--dp-form-error-color, $red) !default;
+$form-error-border: var(--dp-form-error-border, $red) !default;
+$form-border-focus-color: var(--dp-form-border-focus-color, $green) !default;
