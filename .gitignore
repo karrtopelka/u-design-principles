@@ -46,6 +46,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# node_modules in sub directories can be ignored
+**/node_modules
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
