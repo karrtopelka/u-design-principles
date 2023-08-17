@@ -11,8 +11,7 @@
     "typescript": "^5.1.6"
   },
   "scripts": {
-    "dev": "parcel src/index.html -p 3000 --no-cache",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html -p 3000 --no-cache"
   },
   "dependencies": {
     "react": "^18.2.0"

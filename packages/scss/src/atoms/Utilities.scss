@@ -1,0 +1,11 @@
+@import 'foundation/all';
+
+@each $size, $value in $spacing {
+  .dp-width-#{$size} {
+    width: $value;
+  }
+
+  .dp-height-#{$size} {
+    height: $value;
+  }
+}

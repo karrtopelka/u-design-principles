@@ -1,0 +1,13 @@
+{
+  "name": "@design-principles/foundation",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  }
+}

@@ -2,7 +2,7 @@ import ts from 'rollup-plugin-typescript2';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
-  input: ['./src/index.ts', './src/atoms/Button/index.ts'],
+  input: ['./src/index.ts', './src/atoms/Color/Color.tsx', './src/atoms/Text/Text.tsx'],
   output: {
     dir: './lib',
     format: 'esm',
