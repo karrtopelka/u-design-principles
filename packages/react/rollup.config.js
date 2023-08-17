@@ -7,6 +7,7 @@ export default {
     './src/atoms/Color/Color.tsx',
     './src/atoms/Text/Text.tsx',
     './src/atoms/Margin/Margin.tsx',
+    './src/molecules/Select/Select.tsx',
   ],
   output: {
     dir: './lib',
