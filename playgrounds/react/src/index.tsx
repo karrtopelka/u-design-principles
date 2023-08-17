@@ -4,4 +4,4 @@ import { Button } from '@design-principles/react/lib';
 
 import '@design-principles/scss/lib/atoms/Button.css';
 
-ReactDOM.render(<Button label='Example' />, document.getElementById('root'));
+ReactDOM.render(<Button label='Example button' />, document.getElementById('root'));

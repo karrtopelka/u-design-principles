@@ -18,11 +18,11 @@
       "**/react",
       "**/react-dom",
       "**/normalize-scss",
-      "**/@rollup/plugin-node-resolve",
-      "**/@rollup/plugin-react"
+      "**/@rollup/plugin-node-resolve"
     ]
   },
   "scripts": {
-    "build": "npx lerna run build"
+    "build": "npx lerna run build",
+    "dev": "npx lerna run dev"
   }
 }
