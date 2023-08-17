@@ -1,5 +1,25 @@
 {
   "devDependencies": {
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lerna": "^7.1.5"
+  },
+  "name": "@design-principles/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:karrtopelka/u-design-principles.git",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/normalize-scss"
+    ]
+  },
+  "scripts": {
+    "build": "npx lerna run build"
   }
 }
