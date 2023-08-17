@@ -3,7 +3,7 @@ const path = require('path');
 const sass = require('sass');
 
 const scssSourcePath = path.resolve(__dirname, '../src');
-const normalizePath = path.resolve(__dirname, '..');
+const normalizePath = path.resolve(__dirname, '../node_modules/normalize-scss/sass');
 
 const globalScssFilePath = path.resolve(__dirname, '../src/global.scss');
 const outputFilePath = path.resolve(__dirname, '../src/lib/global.css');
