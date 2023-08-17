@@ -9,6 +9,10 @@
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@rollup/plugin-node-resolve": "^15.2.0",
+    "@storybook/addon-a11y": "^7.3.1",
+    "@storybook/addon-knobs": "^7.0.2",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^7.3.1",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
@@ -23,6 +27,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "jest --verbose",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "start-storybook": "npx start-storybook -p 6006",
+    "build-storybook": "npx build-storybook"
   }
 }
