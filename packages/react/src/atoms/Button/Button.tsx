@@ -1,5 +1,7 @@
-export type ButtonProps = {
+type ButtonProps = {
   label: string;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+};
 
-export const Button = ({ label, ...props }: ButtonProps) => <button {...props}>{label}</button>;
+const Button = ({ label, ...props }: ButtonProps) => <button {...props}>{label}</button>;
+
+export default Button;

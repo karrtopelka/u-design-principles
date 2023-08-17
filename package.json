@@ -16,7 +16,9 @@
     "nohoist": [
       "**/react",
       "**/react-dom",
-      "**/normalize-scss"
+      "**/normalize-scss",
+      "**/@rollup/plugin-node-resolve",
+      "**/@rollup/plugin-react"
     ]
   },
   "scripts": {
