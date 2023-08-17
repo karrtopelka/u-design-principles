@@ -2,7 +2,12 @@ import ts from 'rollup-plugin-typescript2';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
-  input: ['./src/index.ts', './src/atoms/Color/Color.tsx', './src/atoms/Text/Text.tsx'],
+  input: [
+    './src/index.ts',
+    './src/atoms/Color/Color.tsx',
+    './src/atoms/Text/Text.tsx',
+    './src/atoms/Margin/Margin.tsx',
+  ],
   output: {
     dir: './lib',
     format: 'esm',
@@ -14,5 +19,5 @@ export default {
       tsconfig: './tsconfig.json',
     }),
   ],
-  external: ['react', 'react-dom', nodeResolve()],
+  external: ['react', 'react-dom', nodeResolve(), '@design-principles/foundation'],
 };

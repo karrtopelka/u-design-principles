@@ -1,6 +1,16 @@
 import ReactDOM from 'react-dom';
-
-import { Color } from '@design-principles/react';
 import '@design-principles/scss/lib/atoms/Utilities.css';
+import '@design-principles/scss/lib/atoms/Margin.css';
+import '@design-principles/scss/lib/global.css';
 
-ReactDOM.render(<Color hexCode='#000' width='md' height='sm' />, document.getElementById('root'));
+import { Text, Margin } from '@design-principles/react';
+import '@design-principles/scss/lib/atoms/Text.css';
+
+ReactDOM.render(
+  <div>
+    <Margin space='none' left={true}>
+      <Text size='lg'>Hello World</Text>
+    </Margin>
+  </div>,
+  document.getElementById('root'),
+);
