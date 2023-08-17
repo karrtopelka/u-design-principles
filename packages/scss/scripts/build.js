@@ -6,7 +6,7 @@ const scssSourcePath = path.resolve(__dirname, '../src');
 const normalizePath = path.resolve(__dirname, '../node_modules/normalize-scss/sass');
 
 const globalScssFilePath = path.resolve(__dirname, '../src/global.scss');
-const outputFilePath = path.resolve(__dirname, '../src/lib/global.css');
+const outputFilePath = path.resolve(__dirname, '../lib/global.css');
 
 const componentTypes = ['atoms', 'molecules', 'organisms'];
 
@@ -18,7 +18,7 @@ const getAllComponents = () => {
       .readdirSync(path.resolve(__dirname, `../src/${type}`))
       .map((component) => ({
         input: path.resolve(__dirname, `../src/${type}/${component}`),
-        output: path.resolve(__dirname, `../src/lib/${type}/${component.replace('.scss', '.css')}`),
+        output: path.resolve(__dirname, `../lib/${type}/${component.replace('.scss', '.css')}`),
       }));
 
     allComponents = [...allComponents, ...components];
